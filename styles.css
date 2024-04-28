@@ -1,0 +1,77 @@
+
+            .article-class {
+                position: relative; /* Ensure article is positioned relatively */
+                width: 800px; /* Adjust this width as needed */
+                height: 500px; /* Adjust this height as needed */
+                border: 1px solid navy; /* Just for visualization */
+                background-color: papayawhip;
+            }
+
+            .article-image {
+                position: absolute;
+                top: 20px; /* Adjust top position as needed */
+                right: 20px; /* Adjust right position as needed */
+                width: 50%;
+            }
+
+            .article-title::before,
+            .article-title::after {
+                content: "";
+                display: inline-block;
+                width: 50px;
+                height: 50px; 
+                background-image: url('https://cdn.pixabay.com/photo/2023/09/05/03/04/alpaca-8234110_1280.jpg'); 
+                background-size: cover; 
+                background-position: center; 
+                margin-right: 10px; 
+                margin-left: 10px;
+            }
+
+            .contact-info {
+                position: relative;
+                background-color: antiquewhite;
+                padding: 10px;
+                margin-top: 10px;
+                border: 1px solid brown;
+            }
+
+            .address::before {
+                content: "";
+                display: inline-block;
+                width: 25px;
+                height: 25px; 
+                background-image: url('https://cdn-icons-png.freepik.com/512/2163/2163350.png?ga=GA1.1.1987807417.1709863225'); 
+                background-size: cover; 
+                background-position: center; 
+                margin-right: 10px; 
+                margin-left: 10px;
+            }
+
+            .phone::before {
+                content: "";
+                display: inline-block;
+                width: 25px;
+                height: 25px; 
+                background-image: url('https://cdn-icons-png.freepik.com/512/3014/3014736.png?ga=GA1.1.1987807417.1709863225'); 
+                background-size: cover; 
+                background-position: center; 
+                margin-right: 10px; 
+                margin-left: 10px;
+            }
+
+            .article-image:hover {
+                border: 5px red dotted;
+            }
+
+            .article-text {
+                width: 300px;
+            }
+
+            .food, .fleece {
+                border-bottom: 2px solid orange;
+            }
+            .food:hover, .fleece:hover {
+                background-color: orange;
+                color: white;
+                font-size: 16px;
+            }
